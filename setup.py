@@ -25,30 +25,31 @@ with open('HISTORY.rst') as history_file:
 
 
 requirements = [
-    'numpy>=1.6',
-    'docutils<=0.16,>0.12'
-    'Click>=6.0,<8.0',
-    'pandas',
-    'nbsphinx', # sphinx documentation for jupyter notebooks
-    'sphinx-click', # sphinx documentation for click
-    'alabaster', # alabaster theme for documentation
-    'packaging',
-    'scipy>=1.0.0',
-    'dask',
-    'matplotlib',
-    'plumbum',
-    'dask-jobqueue>=0.7.0',
+    #'numpy>=1.6',
+    'docutils==0.16',
+    #'Click>=6.0,<8.0',
+    #'pandas',
+    'sphinx==4.3.1',
+    'nbsphinx==0.8.7', # sphinx documentation for jupyter notebooks
+    'sphinx-click==3.0.2', # sphinx documentation for click
+    'alabaster==0.7.12', # alabaster theme for documentation
+    #'packaging',
+    #'scipy>=1.0.0',
+    #'dask',
+    'matplotlib==3.5.0',
+    'plumbum==1.7.1',
+    #'dask-jobqueue>=0.7.0',
     # 'openmm>=7.3.0',
     # 'openmmtools',
     # 'mdtraj',
     # put package requirements here
 ]
 
-if sys.version_info[0] < 3:
-    requirements.append('matplotlib<3')
-else:
-    requirements.append('matplotlib')
-
+#if sys.version_info[0] < 3:
+#    requirements.append('matplotlib<3')
+#else:
+#    requirements.append('matplotlib')
+#
 setup_requirements = [
     'pytest-runner',
     'numpy>=1.20',
